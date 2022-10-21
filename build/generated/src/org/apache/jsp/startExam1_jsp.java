@@ -1,0 +1,274 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class startExam1_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Start EXAM</title>\n");
+      out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n");
+      out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n");
+      out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">  \n");
+      out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>  \n");
+      out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>  \n");
+      out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\"></script>\n");
+      out.write("        <script>\n");
+      out.write("        // Set the date we're counting down to\n");
+      out.write("        //var countDownDate = new Date(\"Jan 5, 2024 15:37:25\").getTime();\n");
+      out.write("        var countDownDate = new Date(\"Oct 17, 2022 18:37:25\").getTime();\n");
+      out.write("        // Update the count down every 1 second\n");
+      out.write("        var x = setInterval(function() {\n");
+      out.write("\n");
+      out.write("          // Get today's date and time\n");
+      out.write("          var now = new Date().getTime();\n");
+      out.write("\n");
+      out.write("          // Find the distance between now and the count down date\n");
+      out.write("          var distance = countDownDate - now;\n");
+      out.write("\n");
+      out.write("          // Time calculations for days, hours, minutes and seconds\n");
+      out.write("          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));\n");
+      out.write("          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));\n");
+      out.write("          var seconds = Math.floor((distance % (1000 * 60)) / 1000);\n");
+      out.write("\n");
+      out.write("          // Display the result in the element with id=\"demo\"\n");
+      out.write("          document.getElementById(\"timer\").innerHTML = hours + \"h \"\n");
+      out.write("          + minutes + \"m \" + seconds + \"s \";\n");
+      out.write("\n");
+      out.write("          // If the count down is finished, wrong some text\n");
+      out.write("          if (distance < 0) {\n");
+      out.write("            clearInterval(x);\n");
+      out.write("            document.getElementById(\"timer\").innerHTML = \"EXPIRED\";\n");
+      out.write("          }\n");
+      out.write("        }, 1000);\n");
+      out.write("        \n");
+      out.write("        function timeAlert()\n");
+      out.write("        {\n");
+      out.write("            if(document.getElementById(\"timer\")==\"EXPIRED\")\n");
+      out.write("            {\n");
+      out.write("\n");
+      out.write("                alert(\"TIME OUT\");\n");
+      out.write("            }\n");
+      out.write("            else\n");
+      out.write("            {\n");
+      out.write("                confirm(\"YOU CAN CONTINUE THE EXAMINATION\");\n");
+      out.write("            }\n");
+      out.write("        }\n");
+      out.write("        timeAlert();\n");
+      out.write("    </script>\n");
+      out.write("        <style>\n");
+      out.write("            h1{background-color: darkkhaki;font-stretch:extra-condensed;text-align: center;}\n");
+      out.write("            #timer{color:green}\n");
+      out.write("            .tab-content{margin:30px;}\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <center>\n");
+      out.write("            <h1><a href=\"index.html\">ONLINE COMPETATIVE EXAMINATION</a></h1>\n");
+      out.write("            <h1>Now you can start the exam  <div>Time left :  <span id=\"timer\"></span></div>  </h1>\n");
+      out.write("        </center>\n");
+      out.write("            <ul class=\"nav nav-pills\">\n");
+      out.write("                <li class=\"active\"><a data-toggle=\"pill\" href=\"#pythonquiz1\">QUIZ 1</a></li>\n");
+      out.write("                <li><a data-toggle=\"pill\" href=\"#\">---</a></li>\n");
+      out.write("                <li><a data-toggle=\"pill\" href=\"#djangoquiz1\">QUIZ 2</a></li>\n");
+      out.write("                <li><a data-toggle=\"pill\" href=\"#\">---</a></li>\n");
+      out.write("            </ul>\n");
+      out.write("\n");
+      out.write("            <div class=\"tab-content\">\n");
+      out.write("                <!-- PYTHON-->  \n");
+      out.write("                \n");
+      out.write("              <div id=\"pythonquiz1\" class=\"tab-pane fade in active\" name=\"pythonquiz1\">\n");
+      out.write("                <h3>PYTHON QUIZ 1</h3>\n");
+      out.write("                <p>Q1. What is the maximum possible length of an identifier?</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />16<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />32<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />64<br>\n");
+      out.write("                <input type=\"radio\" name=\"correct\" />none of the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q2 Who developed the Python language?</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />a. Zim Den<br>\n");
+      out.write("                <input type=\"radio\"  name=\"correct\" />b. Guido van Rossum<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />c. Niene Stom<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />d. Wick van Rossum<br><br>\n");
+      out.write("              \n");
+      out.write("               <p>Q3. In which year was the Python language developed?</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a. 1995<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />b. 1972<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />c. 1981<br>\n");
+      out.write("                <input type=\"radio\" name=\"correct\" />d. 1989<br><br>\n");
+      out.write("              \n");
+      out.write("                <p>Q4. In which language is Python written?</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />a. English<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />b. PHP<br>\n");
+      out.write("                <input type=\"radio\"  name=\"correct\" />c. C<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />d. All of the above<br><br>\n");
+      out.write("                \n");
+      out.write("                <p>Q5. Which one of the following is the correct extension of the Python file?</p>\n");
+      out.write("                <input type=\"radio\" name=\"correct\" />a. .py<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />b. .python<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />c. .p<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />d. None of these<br><br>\n");
+      out.write("              \n");
+      out.write("                <p>Q6. In which year was the Python 3.0 version developed?</p>\n");
+      out.write("                <input type=\"radio\"  name=\"correct\" />a. 2008<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />b. 2000<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />c. 2010<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />d. 2005<br><br>\n");
+      out.write("              \n");
+      out.write("                <p>Q7. What do we use to define a block of code in Python language?</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a. Key<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />b. Brackets<br>\n");
+      out.write("                <input type=\"radio\" name=\"correct\" />c. Indentation<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />d. None of these<br><br>\n");
+      out.write("              \n");
+      out.write("                <p>Q8. Which character is used in Python to make a single line comment?</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />a. /<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />b. //<br>\n");
+      out.write("                <input type=\"radio\"  name=\"correct\" />c. #<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />d. !<br><br>\n");
+      out.write("              \n");
+      out.write("               <p>Q9. Which of the following statements is correct regarding the object-oriented programming concept in Python?</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a. Classes are real-world entities while objects are not real<br>\n");
+      out.write("                <input type=\"radio\" name=\"correct\" />b. Objects are real-world entities while classes are not real<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />c. Both objects and classes are real-world entities<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />d. All of the above<br><br>\n");
+      out.write("\n");
+      out.write("                <p>Q10. What is the method inside the class in python language?</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />a. Object<br>\n");
+      out.write("                <input type=\"radio\"  name=\"correct\" />b. Function<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />c. Attribute<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />d. Argument<br><br>\n");
+      out.write("              </div>\n");
+      out.write("              \n");
+      out.write("\n");
+      out.write("             </div>   \n");
+      out.write("            <div class=\"tab-content\">\n");
+      out.write("                <!-- DJANGO-->  \n");
+      out.write("                \n");
+      out.write("              <div id=\"djangoquiz1\" class=\"tab-pane fade in active\" name=\"djangoquiz1\">\n");
+      out.write("                <h3>DJANGO QUIZ 1</h3>\n");
+      out.write("                <p> Q1 Which of the following is wrong in english grammar</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />the<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />an<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />all the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q2 When the principle entered the class, a student ____ on the blackboard</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrote<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />was writing<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrongs<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />is writing<br><br>\n");
+      out.write("                \n");
+      out.write("               <p> Q3 Which of the following is wrong in english grammar</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />the<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />an<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />all the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q4 When the principle entered the class, a student ____ on the blackboard</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrote<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />was writing<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrongs<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />is writing<br><br>\n");
+      out.write("    \n");
+      out.write("                <p> Q5 Which of the following is wrong in english grammar</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />the<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />an<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />all the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q6 When the principle entered the class, a student ____ on the blackboard</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrote<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />was writing<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrongs<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />is writing<br><br>\n");
+      out.write("              \n");
+      out.write("                  <p> Q7 Which of the following is wrong in english grammar</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />the<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />an<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />all the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q8 When the principle entered the class, a student ____ on the blackboard</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrote<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />was writing<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrongs<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />is writing<br><br>\n");
+      out.write("               \n");
+      out.write("              <p> Q9 Which of the following is wrong in english grammar</p>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />a<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />the<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />an<br>\n");
+      out.write("                <input type=\"radio\" name=\"wrong\" />all the above<br><br>\n");
+      out.write("              \n");
+      out.write("                <p> Q10 When the principle entered the class, a student ____ on the blackboard</p>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrote<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />was writing<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />wrongs<br>\n");
+      out.write("                <input type=\"radio\"  name=\"wrong\" />is writing<br><br>\n");
+      out.write("              </div>\n");
+      out.write("              \n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("    <button class=\"btn btn-success\">Submit</button>    \n");
+      out.write("    <button class=\"btn btn-primary\">Reset</button>    \n");
+      out.write("        \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
